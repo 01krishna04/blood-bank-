@@ -1,0 +1,27 @@
+{
+  "name": "bloodbank-backend",
+  "version": "1.0.0",
+  "description": "Backend for the BloodBank management system.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server-supabase.js",
+    "start:memory": "node server.js",
+    "start:mongodb": "node server-mongodb.js",
+    "dev": "nodemon server-supabase.js",
+    "test:supabase": "node test-supabase.js",
+    "test:mongodb": "node test-mongodb.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.22.1",
+    "pg": "^8.11.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
